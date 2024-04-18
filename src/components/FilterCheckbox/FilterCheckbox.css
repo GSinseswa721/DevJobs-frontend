@@ -1,0 +1,70 @@
+/* Customize the label (the container) */
+.ui-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding-left: 1rem;
+  width: 16.5%;
+}
+
+/* Hide the browser's default checkbox */
+.ui-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.ui-checkbox--checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: var(--checkmark-background);
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a light purple background color */
+.ui-checkbox:hover input ~ .ui-checkbox--checkmark {
+  background-color: var(--checkmark-background-hover);
+}
+
+/* When the checkbox is checked, add a dark purple background */
+.ui-checkbox input:checked ~ .ui-checkbox--checkmark {
+  background-color: #5964e0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.ui-checkbox--checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.ui-checkbox input:checked ~ .ui-checkbox--checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.ui-checkbox .ui-checkbox--checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ui-checkbox__text {
+  margin-left: 25px;
+}

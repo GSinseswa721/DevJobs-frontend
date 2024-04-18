@@ -1,0 +1,81 @@
+.ui-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ui-button:hover {
+  opacity: 0.8;
+  background-color: var(--primary-accent);
+}
+
+.ui-button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* CUSTOM BUTTON STYLES */
+
+.btn--default {
+  background-color: var(--dark-background);
+  color: var(--secondary-button-background);
+}
+
+.btn--default:hover {
+  background-color: var(--dark-background);
+  border: 2px solid var(--dark-background);
+  color: var(--dark);
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: var(--light-button-text);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-accent);
+}
+
+.theme-dark .btn--secondary {
+  background-color: var(--secondary-button-background);
+  color: var(--light-text);
+}
+
+.btn--secondary {
+  background-color: var(--secondary-button-background);
+  color: var(--accent-text);
+}
+
+.btn--secondary:hover {
+  background-color: var(--secondary-button-hover);
+}
+
+.btn--danger {
+  background-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn--danger:hover {
+  background-color: var(--danger-hover);
+}
+
+.btn--success {
+  background-color: var(--success);
+  color: var(--success);
+}
+
+.btn--success:hover {
+  background-color: var(--success-hover);
+}
+
+.btn--dark {
+  background-color: var(--dark);
+  color: var(--light-text);
+}
+.btn--dark:hover {
+  background-color: var(--dark-hover);
+}

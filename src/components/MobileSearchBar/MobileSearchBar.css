@@ -1,0 +1,36 @@
+.mobile-search-bar {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: var(--light-background);
+  margin-top: -25px;
+  border-radius: 6px;
+  align-items: center;
+  height: 60px;
+}
+
+.mobile-search-bar .search-input {
+  flex: 1;
+  width: 100%;
+}
+
+.mobile-search-bar .search-input::after {
+  opacity: 0;
+}
+
+.mobile-search-bar .ui-input__input-pad-0 {
+  width: 100%;
+}
+
+.mobile-search-bar .ui-button {
+  padding: 10px;
+  margin-right: 6px;
+}
+
+.mobile-search-bar .btn--default {
+  background-color: transparent;
+}
+
+.mobile-search-bar__buttons {
+  display: flex;
+}
